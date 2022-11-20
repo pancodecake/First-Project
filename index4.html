@@ -36,7 +36,7 @@
     <title>Document</title>
   </head>
   <body>
-     <header>
+    <header>
       <nav class="first-nav">
         <div class="first-nav__container ">
           <a href="" class="second-nav__con-logo "><svg
@@ -56,19 +56,23 @@
             </svg>
             SitDownPls
           </a>
-          <div class="first-nav__dropdown-con  ">
+          <div  class="first-nav__dropdown-con dropdown ">
             <div class="first-nav__dropdown-div">
             <p>Ваш регион:</p>
-            <div class="first-nav__dropdown-btn ">
-             <p>Москва</p> 
-   <ul class="first-nav__dropdown-menu hidden ">
-              <li class="first-nav__dropdown-item  effect-text">Казань</li>
+            <div>
+              <button class="first-nav__dropdown-btn ">
+                Москва
+                <svg  class="first-nav__dropdown-svg " width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.65674 5.80521L10.5593 0.902607L11.3136 1.65685L5.65674 7.31371L-0.000115871 1.65685L0.754131 0.902607L5.65674 5.80521Z" fill="#A65CF0"/>
+                  </svg>
+              </button>
+          
+            <ul  class="first-nav__dropdown-menu hidden drop-menu ">
+              <li class="first-nav__dropdow n-item  effect-text">Казань</li>
               <li class="first-nav__dropdown-item  effect-text">Уфа</li>
               <li class="first-nav__dropdown-item  effect-text">Пермь</li>
             </ul>
-            <svg  class="first-nav__dropdown-svg " width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.65674 5.80521L10.5593 0.902607L11.3136 1.65685L5.65674 7.31371L-0.000115871 1.65685L0.754131 0.902607L5.65674 5.80521Z" fill="#A65CF0"/>
-              </svg>
+       
           </div>
             
            
@@ -162,7 +166,7 @@
   
           <ul class="navbar-nav">
             <li class="navbar-item">
-              <a href="index2.html" class="nav-link  effect-text">Каталог </a>
+              <a href="#" class="nav-link  effect-text">Каталог </a>
             </li>
             <li class="navbar-item">
               <a href="#" class="nav-link  effect-text">Магазины</a>
@@ -201,21 +205,25 @@
               </svg>
             </span>
           </div>
-         <div class="second-nav__dropdown input-effect-2">
-            <button
-              class="second-nav__dropdown-btn "
-              type="button"
+          
+         <div class="second-nav__dropdown dropdown input-effect-2">
+       
+          <button
+          class="second-nav__dropdown-btn "
+          type="button"
+         
+          
+        >
+          Категория
+          <svg  class="second-nav__dropdown-svg " width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.65674 5.80521L10.5593 0.902607L11.3136 1.65685L5.65674 7.31371L-0.000115871 1.65685L0.754131 0.902607L5.65674 5.80521Z" fill="#A65CF0"/>
+            </svg>
+        </button>
              
-              
-            >
-              Категория
-             
-            </button>
-             <svg  class="second-nav__dropdown-svg" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.65674 5.80521L10.5593 0.902607L11.3136 1.65685L5.65674 7.31371L-0.000115871 1.65685L0.754131 0.902607L5.65674 5.80521Z" fill="#A65CF0"/>
-                </svg>
+           
+        
             
-            <ul class="second-nav__dropdown-menu hidden">
+            <ul class="second-nav__dropdown-menu hidden drop-menu">
               <li><a href="#" class="second-nav__dropdown-item">Диваны</a></li>
               <li><a href="#" class="second-nav__dropdown-item">Кресла</a></li>
               <li><a href="#" class="second-nav__dropdown-item">Пуфы</a></li>
@@ -260,6 +268,7 @@
         <img src="imgs/Vector(4).png" alt="imgs/Vector(4).png">
         </div>
     </header>
+
    <main>
     <p class="caths"><span>Главная&nbsp;/</span><span>&nbsp;Каталог&nbsp;/</span><span>&nbsp;Диваны&nbsp;/</span><span>&nbsp;Прямые диваны</span></p>
     <section class="info">
