@@ -1,0 +1,17 @@
+@use '../custom' as *;
+@font-face {
+    font-family: "fairbold";
+  src: url("../fonts/PlayfairDisplay-Bold.ttf") format("ttf");
+  font-weight: 900;
+  font-display: swap;
+  
+  font-style: normal;
+}
+@font-face {
+    font-family: "fair";
+  src: url("../fonts/PlayfairDisplay-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-display: swap;
+  
+  font-style: normal;
+}

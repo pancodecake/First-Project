@@ -1,0 +1,144 @@
+// MY THEME COLORS 
+// $tooltip-padding-y:5px;                 
+// $tooltip-padding-x:5px;
+$gray : #999999;
+$tooltip-max-width:                 250px;
+$purple-dark:  #9926f0;
+$purple-light:  #BB6EF5;
+$pink:  #F8EFFF;
+$purple-deep:  #7033AC;
+$tooltip-bg: #333333;
+
+$footer: #151414;
+$secondary: #E5E5E5; ;
+$primary:#A65CF0;
+$warning:#FF862F;
+$orange:#FF862F;
+$btn-padding-y:19px;
+$btn-padding-x:35px;
+$btn-font-size:1rem;
+$btn-border-radius:10px;
+$btn-primary:$primary;
+$dark:#333333;
+$light: #999999;
+$spacers: (
+    'bot':70px
+);
+
+
+// #######################################
+//		NO NEED TO CUSTOM THE GRAY COLOR IF YOU DO NOT
+// #######################################
+
+
+
+
+
+// ACCORDION OVERRIDES
+
+$utilities: (
+
+  "width": (
+    property: width,
+    class: w,
+    state: hover,
+    values: (
+      buybtn:6.666666666666667vw,
+      shopbtn:11.484375vw,
+      25: 100px,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto
+    )
+  ),
+  "height": (
+    property: height,
+    class: h,
+   
+    values: (
+      shopbtn:45px,
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto
+    )
+  ),
+  "font-weight": (
+    property: font-weight,
+    class: fw,
+    values: (
+      
+      cathalog:700,
+      // light: $font-weight-light,
+      // lighter: $font-weight-lighter,
+      // normal: $font-weight-normal,
+      // bold: $font-weight-bold,
+      // semibold: $font-weight-semibold,
+      // bolder: $font-weight-bolder
+    )
+  ),
+  "font-size": (
+    rfs: true,
+    property: font-size,
+    cathalog:16px,
+    class: fs,
+    values: (
+      
+      
+      nav:1rem,
+      foot:1rem,
+    )
+  ),
+  "line-height": (
+    property: line-height,
+    class: lh,
+    values: (
+      
+      
+      nav:21.79px,
+      foot:1rem,
+      cathalog:19.2px,
+      1: 1,
+      // sm: $line-height-sm,
+      // base: $line-height-base,
+      // lg: $line-height-lg,
+    )
+  ),
+  "opacity": (
+    property: opacity,
+    class: opacity,
+    state: hover,
+    values: (
+      0: 0,
+      25: .25,
+      50: .5,
+      75: .75,
+      100: 1,
+    )
+  ),
+  
+);
+// ##########################################
+//   OPTION 1: 
+// - IMPORT BOOTSTRAP ( The entire bootstrap with everything)
+// ##########################################
+
+
+// $custom-colors:(
+//     "panpiecake":#900
+// );
+// $theme-colors:map-merge($theme-colors,$custom-colors);
+// ##########################################
+//   OPTION 2: 
+// - IMPORT IMPORT ONLY THE PART OF BOOTSTRAP YOU WANT TO USE
+// ##########################################
+
+// @import "../node_modules/bootstrap/scss/functions";
+// @import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/mixins";
+
+// Include any optional Bootstrap components as you like
+// @import "../node_modules/bootstrap/scss/root";
+// @import "../node_modules/bootstrap/scss/reboot";

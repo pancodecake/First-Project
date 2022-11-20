@@ -1,0 +1,234 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+@mixin sml {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+@mixin mid {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin lrg {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@include lrg{
+  .pop-up{
+    left: 20%!important;
+  }
+    .items{
+        @include lrg-center;
+        .items__main{
+          width: 92.7%!important;
+          
+        }
+        .items__main-img{
+          // width: 514px!important;
+        }
+        .items__main-imgs{
+            padding: 10px!important;
+        }
+        
+    }
+    .items__main-info{
+      width: 50.195vw
+      !important;
+    }
+    .items-con{
+        @include lrg-center;
+    }
+    
+}
+@include mid{
+  .pop-up{
+    left: 10%!important;
+  }
+    .items{
+        @include mid-center;
+        .items__main{
+          width: 100%!important;
+         
+           display: grid!important;
+           grid-template-areas: 
+           'img img'
+           'imgs buy';
+
+        }
+        .items__main-img{
+          // width:50.195vw!important ;
+        }
+        .items__main-imgs{
+            flex-direction: column;
+            align-items: center;
+            padding:37px 0 !important;
+            img{
+              margin: 0!important;
+              
+            }
+            img:not(:last-child){
+              margin-bottom: 18px!important;
+            }
+
+        }
+        .items-main__buy{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          button{
+            width: 57%!important;
+          }
+        }
+        .items__info{
+          flex-direction: column!important;
+          .items__main-info{
+            margin:32px 0!important ;
+            // width: 82.5%!important;
+           p{
+            width: 66.927vw
+            !important;
+           span{
+            position: unset
+           }
+           }
+          }
+
+        }
+        .items__info-ul{
+          width: 60vw!important;
+        }
+    }
+    .items-con{
+        @include mid-center;
+    }
+
+    
+}
+@include sml{
+  .pop-up{
+    left: 1%!important;
+    width: 95%;
+    p{
+      width: 95%;
+    }
+  }
+  .items{
+    margin-top: 32px!important;
+    @include sml-center;
+    .items__main{
+      width: 100%!important;
+     
+       display: grid!important;
+       grid-template-areas: 
+       'img '
+       'imgs '
+       'buy';
+
+    }
+    .items__main-img{
+      // width: 514px!important;
+    }
+    .items__main-imgs{
+        flex-direction: row!important;
+        padding: 10px!important;
+        img{
+          margin-right: 38px!important;
+        
+        }
+    }
+    .items-main__buy{
+      margin:0!important;
+      margin-top: 16px!important;
+      button{
+        width: 100%!important;
+      }
+    }
+    .items__info{
+      .items__main-info-imgs{
+        img{
+          width: 140px;
+        }
+        img:first-child{
+          margin-right: 16px!important;
+        }
+      }
+      .items__main-info{
+        margin-top: 0!important; 
+        width: 100%!important;
+        p{
+         width: 101%!important;
+         margin-bottom: 32px!important;
+       
+        }
+        
+       }
+
+    }
+    .items__info-ul {
+        
+      li:not(:last-child){
+      
+      }
+     li{
+     
+       p {
+         position: relative;
+         margin-bottom: 27px;
+       }
+       p:before {
+   
+         width: 0!important;
+      
+       }
+
+       .items-li-title {
+         display: inline;
+         position: relative;
+         padding-right: 0.2rem;
+
+         z-index: 2;
+         background-color: #fff;
+        
+       }
+       .items-li-infos {
+        
+         background-color: white;
+        z-index: 100;
+         left:0!important;
+         bottom:-20px!important;
+       }
+       
+       
+     }
+   }
+    
+    
+}
+
+.items-con{
+    @include sml-center;
+    .item-swiper__card{
+      width: 47.5%!important;
+      padding: 18px!important;
+      h3{
+        font-size: 16px!important;
+line-height: 130%!important;
+      }
+      button{
+        padding: 12px 25px!important;
+
+width: 108px;
+      }
+      .highRating-card__img{
+        height: 45px!important;
+        img{
+          max-width: 100%!important;
+        }
+     
+      }
+    }
+}
+}

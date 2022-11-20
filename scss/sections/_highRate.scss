@@ -1,0 +1,103 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.highRating{
+    position: relative;
+    .cath-card__link{
+        position: absolute;
+        
+        
+        
+    }
+ 
+    @include center;
+    button{
+       background-color: $primary;
+    }
+    .highRating__con{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+        // grid-template-columns: repeat(4,15.416666666666668vw);
+        
+        grid-gap: 32px;
+        margin-bottom: 32px;
+       
+
+    }
+    h2{
+        margin-bottom: 26px;
+        font-weight: 400;
+font-size: 32px;
+line-height: 100%;
+    }
+   
+    .highRating__con-card{
+        position: relative;
+       height: 420px;
+        border: none;
+        background-color: $secondary;
+        border-radius: 10px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        flex-shrink: 0;
+        padding:30px;
+        
+        
+         
+        button{
+            color: $primary;
+            background-color: transparent;
+        }
+        span{
+         color: $orange;
+         display: flex;
+         align-items: center;
+         img{
+             margin-right: 6.51px;
+         }
+        }
+        img{
+         max-width: unset!important;
+         cursor: pointer;
+        }
+        .highRating-card__img{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         display: flex!important;
+        
+         width: 100%;
+         height: 200px;
+        }
+      
+      h3{
+         margin-bottom: 18px;
+         font-weight: 400;
+     font-size: 24px;
+     line-height: 130%;
+         
+      }
+      p{
+         margin-bottom: 28px;
+         color: #666666;
+         font-size: 16px;
+     line-height: 130%;
+      }
+   
+   
+   
+}
+.highRating__btnCon{
+    text-align: center;
+}
+.show-more {
+    width: 296px;
+     padding: 22px 36.5px!important;
+    background-color: $primary;
+    margin: 0 auto;
+    color: white;
+    border-radius: 10px;
+   
+ }
+}

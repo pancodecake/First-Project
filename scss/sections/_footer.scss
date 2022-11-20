@@ -1,0 +1,87 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+h5{
+    font-size: 14px;
+line-height: 19px;
+text-align: center;
+color:$light;
+padding: 5px 0;
+}
+footer{
+    .fa-brands:hover:not(:focus):not(:active){
+        color: $primary;
+    }
+    .fa-brands:focus:not(:hover):not(:active){
+        background-color: $purple-light;
+    }
+    .fa-brands:active{
+        color: $purple-deep;
+    }
+    
+    background-color: $secondary;
+    padding: 24px 0;
+    .footer-container{
+        @include center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      
+        
+    }
+    .footer__con{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        a{
+            display: flex;
+            justify-content: center;
+            
+            font-weight: 900;
+font-size: 20px;
+margin-bottom: 31px;
+svg{
+    margin-right: 11px;
+}
+
+        }
+        i{
+          
+            color: $light;
+        }
+        i:not(:last-child){
+            margin-right: 20px;
+        }
+    }
+    .footer_lists ul:not(:last-child){
+        margin-right: 7.813vw
+        ;
+    }
+    .footer_lists{
+        display: flex;
+        flex-direction: row;
+       &
+        ul{
+   
+            display: flex;
+            flex-direction: column;
+            li:not(:last-child){
+                margin-bottom: 10px;
+            }
+            li{
+                font-size: 14px;
+                line-height: 14px;
+                
+                a{
+                    color: $light !important;
+                    text-decoration: none;
+                }
+                h4{
+                    font-size: 16px;
+                    line-height: 16px;
+                    color:#333333!important;
+                }
+            }
+        }
+      
+    }
+}
